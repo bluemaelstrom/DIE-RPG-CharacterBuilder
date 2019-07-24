@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DIE RPG Character Creator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/bootstrap.min.css">
+	<link rel="stylesheet" href="/dierpg.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container form-groupo">
+	<div class="jumbotron center">
+		<h1><div class="label label-danger fancytitle" style="font-size: 90%">DIE RPG</div></h1>
+		<br>
+		<h2><div class="label label-danger fancytitle" style="font-size: 90%">Character Creator</div></h2>
+	</div>
+
+	<div class="row">
+		<!--Name-->
+		<div class="col-sm-4 fancy"
+		onmouseover="this.style.border='3px solid #CC6633';"
+		onmouseout="this.style.border='2px solid #CC6633';">
+			<h3>Your Name</h3>
+			<div class="form-group">
+				<div class="col-sm-10">          
+					<input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<!--Select Class-->
+		<div class="col-sm-4 fancy"
+		onmouseover="this.style.border='3px solid #CC6633';"
+		onmouseout="this.style.border='2px solid #CC6633';">
+			<h3>Select Class</h3>
+			<select class="form-control center"id="classChoice">
+			  <option value="neo">The Neo</option>
+			  <option value="dictator">The Dictator</option>
+			  <option value="fool">The Fool</option>
+			  <option value="knight">The ______ Knight</option>
+			  <option value="godbinder">The Godbinder</option>
+			  <option value="master">The Master</option>
+			</select>
+			<br>
+		</div>
+	</div>
+
+	<%= erb :neo_sheet %>
+	<%= erb :dictator_sheet %>
+	<%= erb :fool_sheet %>
+	<%= erb :night_sheet %>
+	<%= erb :godbinder_sheet %>
+	<%= erb :master_sheet %>
+
+</div>
+<br>
+<br>
+<br>
+<!--Contact Information For The App Creator-->
+<div class="bottomcredit center">Created by BlueMaelstrom. Code can be found at <a href="https://github.com/bluemaelstrom/DIE-RPG-CharacterBuilder">https://github.com/bluemaelstrom/DIE-RPG-CharacterBuilder</a>. Last Modified In 2019.</div>
+</body>
+</html>
